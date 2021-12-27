@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.4s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.cat-img {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 800px;
+}
+
+img {
+  max-width: 100%;
+  transition: 1s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1.5);
+}
+
+.cat-single {
+  border: 1px solid #999;
+  width: 30%;
+  box-shadow: 1px 1px 2px #999;
+  margin: 15px auto;
+}
+
+.cat-body {
+  padding: 10px 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: #999;
+}
+
+p {
+  font-size: 0.8rem;
+}
+
+.cat-origin {
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+span {
+  font-weight: 600;
+}
+
+.cat-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.custom-btn {
+  text-align: center;
+}
+
+.toggle-btn {
+  width: 70px;
+  height: 40px;
+  background: orange;
+  position: relative;
+  border-radius: 30px;
+  padding: 5px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.toggle-btn > .inner-circle {
+  width: 30px;
+  height: 30px;
+  color: orange;
+  background: #fff;
+  border-radius: 50%;
+  margin-right: 50px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.inner-circle {
+  border: none;
+  font-size: 18px;
+}
+
+.toggle-btn.active {
+  background-color: gray;
+}
+
+.toggle-btn.active > .inner-circle {
+  margin-left: 30px;
+  color: #999;
+}
+
+.bar-container {
+  position: relative;
+  background-color: #999;
+  height: 15px;
+  width: 50%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.progress-bar {
+  background-color: rgb(125, 44, 255);
+  height: 15px;
+  position: absolute;
+  animation: progress-animation 0.8s;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
